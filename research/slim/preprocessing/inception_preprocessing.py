@@ -188,6 +188,9 @@ def preprocess_for_train(image, height, width, bbox,
       bbox = tf.constant([0.0, 0.0, 1.0, 1.0],
                          dtype=tf.float32,
                          shape=[1, 1, 4])
+    # convert gray input to rgb
+    if image.shape[-1] == 1:
+      image = tf.image.grayscale_to_rgb(image)
     if image.dtype != tf.float32:
       image = tf.image.convert_image_dtype(image, dtype=tf.float32)
     # Each bounding box has shape [1, num_boxes, box coords] and
@@ -263,6 +266,9 @@ def preprocess_for_eval(image, height, width,
     3-D float Tensor of prepared image.
   """
   with tf.name_scope(scope, 'eval_image', [image, height, width]):
+    # convert gray input to rgb
+    if image.shape[-1] == 1:
+      image = tf.image.grayscale_to_rgb(image)
     if image.dtype != tf.float32:
       image = tf.image.convert_image_dtype(image, dtype=tf.float32)
     # Crop the central region of the image with an area containing 87.5% of
