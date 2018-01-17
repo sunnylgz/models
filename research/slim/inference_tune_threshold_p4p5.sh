@@ -1,0 +1,7 @@
+./defect_detection_2.py --pb_file silicon-models/inception_v3_6/all/frozen_inceptionv3.pb ~/share/my/work/DL/Silicon_capacitor_defect_detection/5.bad_batch5/bad >>silicon-models/inception_v3_6/inference_log_0.5_p4p5.txt
+./defect_detection_2.py --pb_file silicon-models/inception_v3_6/all/frozen_inceptionv3.pb ~/share/my/work/DL/Silicon_capacitor_defect_detection/git/silicon_defect_detection/ww34/bad/ >>silicon-models/inception_v3_6/inference_log_0.5_p4p5.txt
+./defect_detection_2.py --pb_file silicon-models/inception_v3_6/all/frozen_inceptionv3.pb ~/share/my/work/DL/Silicon_capacitor_defect_detection/git/silicon_defect_detection/ww35/bad/ >>silicon-models/inception_v3_6/inference_log_0.5_p4p5.txt
+./defect_detection_2.py --pb_file silicon-models/inception_v3_6/all/frozen_inceptionv3.pb ~/share/my/work/DL/Silicon_capacitor_defect_detection/5.bad_batch5/bad_cropped/ >>silicon-models/inception_v3_6/inference_log_0.5_p4p5.txt
+./defect_detection_2.py --pb_file silicon-models/inception_v3_6/all/frozen_inceptionv3.pb ~/share/my/work/DL/Silicon_capacitor_defect_detection/5.bad_batch5/bad_cropped2/ >>silicon-models/inception_v3_6/inference_log_0.5_p4p5.txt
+./defect_detection_2.py --pb_file silicon-models/inception_v3_6/all/frozen_inceptionv3.pb ~/share/my/work/DL/Silicon_capacitor_defect_detection/5.bad_batch5/bad_cropped3 >>silicon-models/inception_v3_6/inference_log_0.5_p4p5.txt
+ >>silicon-models/inception_v3_6/inference_log_0.5_p4p5.txt
